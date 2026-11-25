@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.site-header {
+    background: #1f242d;
+    color: #fff;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #f69314;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 24px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #f69314;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    background: rgba(20, 25, 34, 0.65);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.hero-content {
+    color: #fff;
+    max-width: 650px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: #e2e8f0;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #f69314;
+    color: #fff;
+    padding: 12px 26px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: #d97c08;
+}
+
+.properties-section {
+    padding: 70px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    color: #f69314;
+    margin-bottom: 8px;
+}
+
+.houses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 30px;
+}
+
+.house-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.house-card:hover {
+    transform: translateY(-5px);
+}
+
+.house-image-wrapper {
+    position: relative;
+    height: 230px;
+}
+
+.house-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #e63946;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.house-body {
+    padding: 22px;
+}
+
+/* Завдання 8: Стилі цін (звичайної, перекресленої та акційної червоної збільшеної) */
+.house-price-box {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.regular-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1f242d;
+}
+
+.old-price {
+    font-size: 18px;
+    color: #6c757d;
+    text-decoration: line-through;
+}
+
+.sale-price {
+    font-size: 28px;
+    font-weight: 800;
+    color: #e63946;
+}
+
+.house-title {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1f242d;
+}
+
+.house-address,
+.house-phone {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+.house-specs {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    margin-top: 14px;
+    padding-top: 12px;
+    font-size: 14px;
+    color: #444;
+}
+
+.about-section {
+    background: #fff;
+    padding: 75px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-subtitle {
+    color: #f69314;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    margin: 10px 0 16px;
+}
+
+.about-content p {
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.about-list {
+    margin-bottom: 24px;
+    padding-left: 20px;
+    color: #444;
+}
+
+.about-list li {
+    margin-bottom: 8px;
+}
+
+.site-footer {
+    background: #1f242d;
+    color: #cbd5e1;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-left h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
